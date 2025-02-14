@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Adminmaster.master.cs" Inherits="Adminmaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Orphanage</title>
+    <link href="orphanagestyle.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 134px;
+        }
+        .auto-style2 {
+            width: 205px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+          <table style="background-image: url('Projimage/header.png'); width: 1340px; height: 157px;">
+            <tr>
+                <td style="text-align: center">
+                    <asp:Image ID="Image1" runat="server" Height="151px" ImageUrl="~/Projimage/orphanage.png" Width="409px" />
+                </td>
+            </tr>
+        </table>
+        <table style="width:1340px;height:20px; background-image: url('Projimage/subheader.png');">
+            <tr>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+        <table style="height: 331px; width: 268px">
+            <tr>
+                <td class="auto-style2" style="vertical-align: top">
+                    <table style="height: 341px; width: 201px">
+                        <tr>
+                            <td class="auto-style1" style="background-color: #FF7D7D">
+                                <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Black" NavigateUrl="~/createorphan.aspx">Create Orphan</asp:HyperLink>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="auto-style1" style="background-color: #FF7D7D">
+                                <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="Black" NavigateUrl="~/createdonar.aspx">Create Donar</asp:HyperLink>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="auto-style1" style="background-color: #FF7D7D">
+                                <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="Black" NavigateUrl="~/manageorphan.aspx">Manage Orphan</asp:HyperLink>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="auto-style1" style="background-color: #FF7D7D">
+                                <asp:HyperLink ID="HyperLink4" runat="server" ForeColor="Black" NavigateUrl="~/managedonar.aspx">Manage Donar</asp:HyperLink>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="auto-style1" style="background-color: #FF7D7D">
+                                <asp:HyperLink ID="HyperLink5" runat="server" ForeColor="Black" NavigateUrl="~/inventory.aspx">Inventory Creation</asp:HyperLink>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="auto-style1" style="background-color: #FF7D7D">
+                                <asp:HyperLink ID="HyperLink6" runat="server" ForeColor="Black" NavigateUrl="~/Reqanalysis.aspx">Requirement Analysis</asp:HyperLink>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="auto-style1" style="background-color: #FF7D7D">
+                                <asp:HyperLink ID="HyperLink7" runat="server" ForeColor="Black" NavigateUrl="~/accounts.aspx">Accounts</asp:HyperLink>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="auto-style1" style="background-color: #FF7D7D">
+                                <asp:HyperLink ID="HyperLink8" runat="server" ForeColor="Black" NavigateUrl="~/specialoccasion.aspx">Special Occasions</asp:HyperLink>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="auto-style1" style="background-color: #FF7D7D">
+                                <asp:HyperLink ID="HyperLink9" runat="server" ForeColor="Black" NavigateUrl="~/statisticsreport.aspx">Statistics & Reports</asp:HyperLink>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="auto-style1" style="background-color: #FF7D7D">
+                                <asp:HyperLink ID="HyperLink10" runat="server" ForeColor="Black" NavigateUrl="~/changepassword.aspx">Change Password</asp:HyperLink>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="auto-style1" style="background-color: #FF7D7D">
+                                <asp:HyperLink ID="HyperLink11" runat="server" ForeColor="Black" NavigateUrl="~/index.aspx">Logout</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="vertical-align: top">
+                     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+       
+    </div>
+    </form>
+</body>
+</html>
